@@ -2,14 +2,15 @@
 
 @using (Html.BeginForm())
 {
-    <p>
+    <div class="form-group">
         @Html.LabelFor(x => x.Title)<br />
-        @Html.TextBoxFor(x => x.Title)
-    </p>
-    <p>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
         @Html.LabelFor(x => x.Content)<br />
-        @Html.TextAreaFor(x => x.Content)
-    </p>
-
-    <input type="submit" value="Nieuw bericht" />
+        @Html.TextAreaFor(x => x.Content, new {@class = "form-control" })
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Nieuw bericht" class="btn btn-default" />
+    </div>
 }

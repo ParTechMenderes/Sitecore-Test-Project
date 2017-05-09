@@ -16,12 +16,7 @@ namespace Test_Website.Controllers
         public ActionResult NewsList()
         {
             NewsRepository Repository = new NewsRepository();
-            NewsModel model = new NewsModel()
-            {
-                Items = Repository.GetItems()
-            };
-
-            return View("~/Views/News/NewsList.cshtml", model);
+            return View("~/Views/News/NewsList.cshtml", Repository.GetItems());
         }
         public ActionResult CreateForm()
         {

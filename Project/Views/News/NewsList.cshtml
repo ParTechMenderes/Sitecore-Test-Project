@@ -1,12 +1,14 @@
 ﻿@model Test_Website.Models.NewsModel
-<article>
-    <ul>
-        @foreach (var item in Model.Items)
-        {
-            <li>
-                <h3>@item.Fields["NewsTitel"]</h3>
-                <p>@item.Fields["NewsContent"]</p>
-            </li>
-        }
-    </ul>
-</article>
+<div class="row">
+    <div class="col-sm-12">
+        <ul class="list-group">
+            @foreach (var item in Model.Items)
+            {
+                <li class="list-group-item">
+                    <h3>@item.Fields["NewsTitel"]</h3>
+                    <p>@item.Fields["NewsContent"]</p>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

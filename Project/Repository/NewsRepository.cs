@@ -1,5 +1,4 @@
 ﻿using Sitecore.Data;
-using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Items;
 using Sitecore.SecurityModel;
@@ -11,10 +10,14 @@ namespace Test_Website.Repository
 
     public class NewsRepository : INewsRepository
     {
-        public List<Item> GetItems() {
+        public NewsModel GetItems() {
             var dId = RenderingContext.CurrentOrNull.Rendering.DataSource;
-            var dSource = Sitecore.Context.Database.GetItem(dId);
-            return dSource.Children.ToList();
+            var dSource = Sitecore.Context.Database.GetItem(dId);            
+            NewsModel model = new NewsModel()
+            {
+                Items = dSource.Children.ToList()
+            };
+            return model;
         }
         public void CreateItem(NewsFormModel model, TemplateItem template, Item parentItem) {
             using (new SecurityDisabler())
