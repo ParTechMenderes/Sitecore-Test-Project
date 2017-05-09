@@ -1,0 +1,15 @@
+﻿@model Test_Website.Models.NewsFormModel
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(x => x.Title)<br />
+        @Html.TextBoxFor(x => x.Title)
+    </p>
+    <p>
+        @Html.LabelFor(x => x.Content)<br />
+        @Html.TextBoxFor(x => x.Content)
+    </p>
+
+    <input type="submit" value="Nieuw bericht" />
+}
