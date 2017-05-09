@@ -1,0 +1,14 @@
+﻿---
+ID: "d8e93b92-3ded-4020-a10e-eec5c58d0603"
+Parent: "e63db03e-6a81-4849-8f0e-fe2d73b6469b"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Features/News/_NewsArticle/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170508T102827Z

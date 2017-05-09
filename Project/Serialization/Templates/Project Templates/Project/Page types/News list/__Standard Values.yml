@@ -1,0 +1,53 @@
+﻿---
+ID: "ff7d7b02-4fcf-46b0-a2b5-0179f9e0bae4"
+Parent: "b067fecc-5777-4624-8882-338a456fea12"
+Template: "b067fecc-5777-4624-8882-338a456fea12"
+Path: /sitecore/templates/Project/Page types/News list/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{6D5B910C-D9E0-4A97-AE89-C9D70B50E122}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{3AE6A2E6-5FA7-4D0C-80A3-AC326F889994}">
+        <r
+          id="{3F91E944-5098-466F-979D-4A272254E13F}"
+          ph="head"
+          uid="{01837FCC-2101-4DDB-8A71-A28045EAA93F}" />
+        <r
+          id="{0B3B0AE9-9F46-4555-B343-213C645A93DB}"
+          ph="body"
+          uid="{0021EA08-2FE0-47D7-BB07-698AB5F01051}" />
+        <r
+          id="{662D9F3A-E286-4C33-B65D-32F6F577553A}"
+          ph="body"
+          uid="{58B6AB9F-DA0E-4DD3-97A8-4B04AFABBDF1}" />
+        <r
+          id="{CB08CBD6-0018-4721-A6E5-93EF7D6BEB0A}"
+          ph="body"
+          uid="{EC43C9EC-5F1A-41D2-B3BD-9B030819D9E2}" />
+        <r
+          id="{979DF09B-CB6C-4E0B-B33A-41A41937319B}"
+          ph="body"
+          uid="{0044B3B2-5218-4940-B5E0-C1A539B7AF36}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170508T103313Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,37 @@
+﻿---
+ID: "236680c2-51b6-4c71-9528-e60c2283e7ee"
+Parent: "6d5b910c-d9e0-4a97-ae89-c9d70b50e122"
+Template: "6d5b910c-d9e0-4a97-ae89-c9d70b50e122"
+Path: /sitecore/templates/Project/Page types/News article/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{3AE6A2E6-5FA7-4D0C-80A3-AC326F889994}">
+        <r
+          id="{3F91E944-5098-466F-979D-4A272254E13F}"
+          ph="head"
+          uid="{4BAB1CAC-EA35-4F32-8431-22E14E3E4D5D}" />
+        <r
+          id="{0B3B0AE9-9F46-4555-B343-213C645A93DB}"
+          ph="body"
+          uid="{92312E01-367D-4A8D-B771-3641B6DC94F1}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170508T103310Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
