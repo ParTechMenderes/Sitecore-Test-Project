@@ -160,6 +160,7 @@
     <Content Include="Views\News\NewsCreate.cshtml" />
     <Content Include="Views\PageContent\PageContent.cshtml" />
     <Content Include="Views\Navigation\MainNavigation.cshtml" />
+    <Content Include="Styles\site.less" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

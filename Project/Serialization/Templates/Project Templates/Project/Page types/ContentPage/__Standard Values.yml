@@ -1,14 +1,14 @@
 ﻿---
-ID: "a12c9b0d-7df3-434a-8b72-f328cad0cd95"
-Parent: "f22f0846-36fe-4999-9556-8d5a2590040e"
-Template: "f22f0846-36fe-4999-9556-8d5a2590040e"
-Path: /sitecore/templates/Project/Page types/HomePage/__Standard Values
+ID: "d67632ff-b096-49d2-9b70-164798c5a876"
+Parent: "bf09035c-f7ff-47bd-ba0e-c9977a97cfe6"
+Template: "bf09035c-f7ff-47bd-ba0e-c9977a97cfe6"
+Path: /sitecore/templates/Project/Page types/ContentPage/__Standard Values
 DB: master
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{B067FECC-5777-4624-8882-338A456FEA12}"
+  Value: 
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

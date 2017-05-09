@@ -5,7 +5,12 @@ namespace Test_Website.Controllers
 {
     public class NavigationController : Controller
     {
-        // GET: Navigation
+        // TODO
+        //private INavigationRepository Repository { get; }
+        //public NavigationController(INavigationRepository navRep)
+        //{
+        //    this.Repository = navRep;
+        //}
         public ActionResult MainNavigation()
         {
             NavigationRepository Repository = new NavigationRepository();

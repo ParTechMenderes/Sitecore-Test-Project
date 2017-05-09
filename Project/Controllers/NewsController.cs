@@ -7,7 +7,7 @@ namespace Test_Website.Controllers
 {
     public class NewsController : Controller
     {
-        // TODO get repository
+        // TODO
         //private INewsRepository Repository { get; }
         //public NewsController(INewsRepository newsRep)
         //{
@@ -28,7 +28,7 @@ namespace Test_Website.Controllers
             // get master db
             Sitecore.Data.Database db = Sitecore.Configuration.Factory.GetDatabase("master");
             // get item template
-            TemplateItem template = db.GetItem("/sitecore/templates/Features/News/_NewsArticle");
+            TemplateItem template = db.GetItem("/sitecore/templates/Project/Page types/News article");
             // get current item parent
             Item parentItem = db.GetItem("/sitecore/content/Home/News");
             NewsRepository Repository = new NewsRepository();

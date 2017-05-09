@@ -82,3 +82,5 @@ Project/obj/Release/Package/PackageTmp/bin/Rainbow.Storage.Yaml.dll
 Project/obj/Release/Package/PackageTmp/bin/Unicorn.dll
 Project/obj/Release/Package/PackageTmp/App_Config/Include/Custom/zVars.config
 Project/obj/Release/Package/PackageTmp/Views/Navigation/MainNavigation.cshtml
+Project/bin/Test Website.dll
+Project/bin/Test Website.pdb

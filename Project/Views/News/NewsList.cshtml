@@ -1,11 +1,12 @@
-﻿@model Test_Website.Models.NewsModel
+﻿@using Sitecore.Links
+@model Test_Website.Models.NewsModel
 <div class="row">
     <div class="col-sm-12">
         <ul class="list-group">
             @foreach (var item in Model.Items)
             {
                 <li class="list-group-item">
-                    <h3>@item.Fields["NewsTitel"]</h3>
+                    <h3><a href="@LinkManager.GetItemUrl(item)">@item.Fields["NewsTitel"]</a></h3>
                     <p>@item.Fields["NewsContent"]</p>
                 </li>
             }

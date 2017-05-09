@@ -29,6 +29,7 @@ namespace Test_Website.Repository
                     if (newItem != null && template != null)
                     {
                         newItem.Editing.BeginEdit();
+                        newItem["BrowserTitle"] = model.Title;
                         newItem["NewsTitle"] = model.Title;
                         newItem["NewsContent"] = model.Content;
                         newItem.Editing.EndEdit();
