@@ -3,12 +3,39 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Data.Items;
+using Sitecore.SecurityModel;
+using Test_Website.Models;
 
 namespace Test_Website.Repository
 {
-    public class NewsRepository
+
+    public class NewsRepository : INewsRepository
     {
-        public void PublishItem(Sitecore.Data.Items.Item item)
+        public void CreateItem(NewsFormModel model, TemplateItem template, Item parentItem) {
+            using (new SecurityDisabler())
+            {
+                // add item
+                Item newItem = parentItem.Add(model.Title, template);
+                try
+                {
+                    if (newItem != null && template != null)
+                    {
+                        newItem.Editing.BeginEdit();
+                        newItem["NewsTitle"] = model.Title;
+                        newItem["NewsContent"] = model.Content;
+                        newItem.Editing.EndEdit();
+                        // publish item
+                        PublishItem(newItem);
+                    }
+                }
+                catch
+                {
+                    newItem.Editing.CancelEdit();
+                }
+            }
+        }
+        public void PublishItem(Item item)
         {
             // The publishOptions determine the source and target database,
             // the publish mode and language, and the publish date
