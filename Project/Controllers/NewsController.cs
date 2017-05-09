@@ -1,8 +1,4 @@
 ﻿using Sitecore.Data.Items;
-using Sitecore.Mvc.Presentation;
-using Sitecore.SecurityModel;
-using Sitecore.Shell.Framework.Commands;
-using System.Linq;
 using System.Web.Mvc;
 using Test_Website.Models;
 using Test_Website.Repository;

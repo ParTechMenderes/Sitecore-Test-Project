@@ -62,3 +62,21 @@ Project/obj/Release/Test Website.csprojResolveAssemblyReference.cache
 Project/obj/Release/Test Website.dll
 Project/obj/Release/Test Website.pdb
 Project/obj/Release/TestWebsite.csproj.FileListAbsolute.txt
+Project/bin/Test Website.dll
+Project/bin/Test Website.pdb
+Project/bin/Test Website.dll
+Project/bin/Test Website.pdb
+Project/obj/Debug/build.force
+Project/obj/Debug/Test Website.csprojResolveAssemblyReference.cache
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Rainbow.config
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Unicorn/Unicorn.AutoPublish.config
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Unicorn/Unicorn.config
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Unicorn/Unicorn.Configs.Default.config
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Unicorn/Unicorn.DataProvider.config
+Project/obj/Release/Package/PackageTmp/App_Config/Include/Unicorn/Unicorn.UI.config
+Project/obj/Release/Package/PackageTmp/bin/Kamsar.WebConsole.dll
+Project/obj/Release/Package/PackageTmp/bin/MicroCHAP.dll
+Project/obj/Release/Package/PackageTmp/bin/Rainbow.dll
+Project/obj/Release/Package/PackageTmp/bin/Rainbow.Storage.Sc.dll
+Project/obj/Release/Package/PackageTmp/bin/Rainbow.Storage.Yaml.dll
+Project/obj/Release/Package/PackageTmp/bin/Unicorn.dll
