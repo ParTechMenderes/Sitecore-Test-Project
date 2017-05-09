@@ -6,12 +6,18 @@ using System.Web;
 using Sitecore.Data.Items;
 using Sitecore.SecurityModel;
 using Test_Website.Models;
+using Sitecore.Mvc.Presentation;
 
 namespace Test_Website.Repository
 {
 
     public class NewsRepository : INewsRepository
     {
+        public List<Item> GetItems() {
+            var dId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+            var dSource = Sitecore.Context.Database.GetItem(dId);
+            return dSource.Children.ToList();
+        }
         public void CreateItem(NewsFormModel model, TemplateItem template, Item parentItem) {
             using (new SecurityDisabler())
             {

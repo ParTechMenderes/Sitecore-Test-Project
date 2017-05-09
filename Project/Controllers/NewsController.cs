@@ -11,7 +11,7 @@ namespace Test_Website.Controllers
 {
     public class NewsController : Controller
     {
-        // get repository
+        // TODO get repository
         //private INewsRepository Repository { get; }
         //public NewsController(INewsRepository newsRep)
         //{
@@ -19,12 +19,10 @@ namespace Test_Website.Controllers
         //}
         public ActionResult NewsList()
         {
-            var dId = RenderingContext.CurrentOrNull.Rendering.DataSource;
-            var dSource = Sitecore.Context.Database.GetItem(dId);
-
+            NewsRepository Repository = new NewsRepository();
             NewsModel model = new NewsModel()
             {
-                Items = dSource.Children.ToList()
+                Items = Repository.GetItems()
             };
 
             return View("~/Views/News/NewsList.cshtml", model);
