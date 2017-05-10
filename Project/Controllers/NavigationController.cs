@@ -1,20 +1,17 @@
-﻿using System.Web.Mvc;
-using Test_Website.Repository;
-
-namespace Test_Website.Controllers
+﻿namespace Test_Website.Controllers
 {
+    using System.Web.Mvc;
+    using Test_Website.Repository;
     public class NavigationController : Controller
     {
-        // TODO
-        //private INavigationRepository Repository { get; }
-        //public NavigationController(INavigationRepository navRep)
-        //{
-        //    this.Repository = navRep;
-        //}
+        private INavigationRepository Repository { get; }
+        public NavigationController(INavigationRepository navRepository)
+        {
+            this.Repository = navRepository;
+        }
         public ActionResult MainNavigation()
         {
-            NavigationRepository Repository = new NavigationRepository();
-            return View("~/Views/Navigation/MainNavigation.cshtml", Repository.GetNavigationItems());
+            return View("~/Views/Navigation/MainNavigation.cshtml", this.Repository.GetNavigationItems());
         }
     }
 }

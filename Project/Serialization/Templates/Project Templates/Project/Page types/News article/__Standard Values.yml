@@ -22,9 +22,13 @@ SharedFields:
           ph="nav"
           uid="{588D789B-2EAF-4F35-BCA3-1FD59DB4F979}" />
         <r
-          id="{0B3B0AE9-9F46-4555-B343-213C645A93DB}"
+          id="{6B0A4449-BA1F-4824-ADFA-6DBBC1055BE9}"
           ph="body"
-          uid="{92312E01-367D-4A8D-B771-3641B6DC94F1}" />
+          uid="{27BD7156-F00F-4D3B-B4D8-71AF0A5E3434}" />
+        <r
+          id="{EBAE8DC7-DC43-4395-92BB-1BA2F97ACD20}"
+          ph="body"
+          uid="{93752BB8-D383-4416-A132-B139CC0661C2}" />
       </d>
     </r>
 Languages:

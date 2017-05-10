@@ -1,22 +1,19 @@
-﻿using Sitecore.Data.Items;
-using System.Web.Mvc;
-using Test_Website.Models;
-using Test_Website.Repository;
-
-namespace Test_Website.Controllers
+﻿namespace Test_Website.Controllers
 {
+    using Sitecore.Data.Items;
+    using System.Web.Mvc;
+    using Test_Website.Models;
+    using Test_Website.Repository;
     public class NewsController : Controller
-    {
-        // TODO
-        //private INewsRepository Repository { get; }
-        //public NewsController(INewsRepository newsRep)
-        //{
-        //    this.Repository = newsRep;
-        //}
+    {        
+        private INewsRepository Repository { get; }
+        public NewsController(INewsRepository newsRepository)
+        {
+            this.Repository = newsRepository;
+        }
         public ActionResult NewsList()
         {
-            NewsRepository Repository = new NewsRepository();
-            return View("~/Views/News/NewsList.cshtml", Repository.GetItems());
+            return View("~/Views/News/NewsList.cshtml", this.Repository.GetItems());
         }
         public ActionResult CreateForm()
         {
@@ -31,8 +28,7 @@ namespace Test_Website.Controllers
             TemplateItem template = db.GetItem("/sitecore/templates/Project/Page types/News article");
             // get current item parent
             Item parentItem = db.GetItem("/sitecore/content/Home/News");
-            NewsRepository Repository = new NewsRepository();
-            Repository.CreateItem(model, template, parentItem);
+            this.Repository.CreateItem(model, template, parentItem);
             return View("~/Views/News/NewsCreate.cshtml");
         }
     }

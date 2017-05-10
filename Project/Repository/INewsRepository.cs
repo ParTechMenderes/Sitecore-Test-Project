@@ -1,8 +1,7 @@
-﻿using Sitecore.Data.Items;
-using Test_Website.Models;
-
-namespace Test_Website.Repository
+﻿namespace Test_Website.Repository
 {
+    using Sitecore.Data.Items;
+    using Test_Website.Models;
     public interface INewsRepository
     {
         NewsModel GetItems();

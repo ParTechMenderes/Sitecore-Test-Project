@@ -6,8 +6,7 @@
             @foreach (var item in Model.Items)
             {
                 <li class="list-group-item">
-                    <h3><a href="@LinkManager.GetItemUrl(item)">@item.Fields["NewsTitel"]</a></h3>
-                    <p>@item.Fields["NewsContent"]</p>
+                   <a href="@LinkManager.GetItemUrl(item)">@item.Fields["NewsTitle"]</a>
                 </li>
             }
         </ul>

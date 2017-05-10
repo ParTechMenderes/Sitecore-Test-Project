@@ -84,3 +84,5 @@ Project/obj/Release/Package/PackageTmp/App_Config/Include/Custom/zVars.config
 Project/obj/Release/Package/PackageTmp/Views/Navigation/MainNavigation.cshtml
 Project/bin/Test Website.dll
 Project/bin/Test Website.pdb
+Project/obj/Release/Package/PackageTmp/Views/News/NewsContent.cshtml
+Project/obj/Release/Package/PackageTmp/Views/News/NewsTitle.cshtml

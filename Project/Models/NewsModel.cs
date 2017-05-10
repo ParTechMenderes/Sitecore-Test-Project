@@ -1,8 +1,7 @@
-﻿using Sitecore.Data.Items;
-using System.Collections.Generic;
-
-namespace Test_Website.Models
+﻿namespace Test_Website.Models
 {
+    using Sitecore.Data.Items;
+    using System.Collections.Generic;
     public class NewsModel
     {
         public IEnumerable<Item> Items { get; set; }

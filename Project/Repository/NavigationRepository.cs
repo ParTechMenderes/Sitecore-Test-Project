@@ -1,9 +1,8 @@
-﻿using Sitecore.Data.Items;
-using System.Collections.Generic;
-using Test_Website.Models;
-
-namespace Test_Website.Repository
+﻿namespace Test_Website.Repository
 {
+    using Sitecore.Data.Items;
+    using System.Collections.Generic;
+    using Test_Website.Models;
     public class NavigationRepository : INavigationRepository
     {
         public NavigationModel GetNavigationItems()

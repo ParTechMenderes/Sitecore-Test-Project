@@ -1,16 +1,21 @@
 ﻿@model Test_Website.Models.NewsFormModel
+<div class="row">
+    <div class="col-sm-12">
+        <h2>Create new item</h2>
 
-@using (Html.BeginForm())
-{
-    <div class="form-group">
-        @Html.LabelFor(x => x.Title)<br />
-        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                @Html.LabelFor(x => x.Title)<br />
+                @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.Content)<br />
+                @Html.TextAreaFor(x => x.Content, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="New item" class="btn btn-default" />
+            </div>
+        }
     </div>
-    <div class="form-group">
-        @Html.LabelFor(x => x.Content)<br />
-        @Html.TextAreaFor(x => x.Content, new {@class = "form-control" })
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Nieuw bericht" class="btn btn-default" />
-    </div>
-}
+</div>

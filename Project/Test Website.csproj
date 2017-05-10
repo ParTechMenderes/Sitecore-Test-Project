@@ -108,10 +108,6 @@
       <HintPath>packages\Unicorn.Core.3.3.2\lib\net452\Unicorn.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -153,14 +149,16 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
-    <Content Include="Views\News\NewsList.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\PageContent\PageTitle.cshtml" />
     <Content Include="Views\MetaData\MetaData.cshtml" />
-    <Content Include="Views\News\NewsCreate.cshtml" />
     <Content Include="Views\PageContent\PageContent.cshtml" />
     <Content Include="Views\Navigation\MainNavigation.cshtml" />
     <Content Include="Styles\site.less" />
+    <Content Include="Views\News\NewsTitle.cshtml" />
+    <Content Include="Views\News\NewsContent.cshtml" />
+    <Content Include="Views\News\NewsCreate.cshtml" />
+    <Content Include="Views\News\NewsList.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

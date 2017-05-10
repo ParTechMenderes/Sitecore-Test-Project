@@ -1,13 +1,11 @@
-﻿using Sitecore.Data;
-using System.Linq;
-using Sitecore.Data.Items;
-using Sitecore.SecurityModel;
-using Test_Website.Models;
-using Sitecore.Mvc.Presentation;
-
-namespace Test_Website.Repository
+﻿namespace Test_Website.Repository
 {
-
+    using Sitecore.Data;
+    using System.Linq;
+    using Sitecore.Data.Items;
+    using Sitecore.SecurityModel;
+    using Test_Website.Models;
+    using Sitecore.Mvc.Presentation;
     public class NewsRepository : INewsRepository
     {
         public NewsModel GetItems() {

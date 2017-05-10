@@ -1,8 +1,7 @@
-﻿using Test_Website.Models;
-
-namespace Test_Website.Repository
+﻿namespace Test_Website.Repository
 {
-    interface INavigationRepository
+    using Test_Website.Models;
+    public interface INavigationRepository
     {
         NavigationModel GetNavigationItems();
     }
